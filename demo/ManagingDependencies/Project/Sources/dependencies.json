@@ -1,0 +1,12 @@
+{
+	"dependencies": {
+		"testComponent": {
+			"github": "addkomo4d/testComponent",
+			"version": "latest"
+		},
+		"Jauge": {
+			"github": "technote-25-06/Jauge",
+			"version": "latest"
+		}
+	}
+}
