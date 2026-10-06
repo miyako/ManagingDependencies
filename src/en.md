@@ -56,7 +56,7 @@ Example:
 }
 ```
 
-In the example, the project requires two components: one stored locally (theLocalComponent) and another fetched from GitHub (theGitHubComponent1). The clear declaration helps reproduce the setup across different environments.
+In the example, the project requires two components: one stored locally (theLocalComponent2) and another fetched from GitHub (theGitHubComponent1). The clear declaration helps reproduce the setup across different environments.
 
 The path for “theLocalComponent2” can be defined either here (Dependencies.json) or in the environment4d.json file which we’ll cover shortly as part of the next sub-section.
 
@@ -86,7 +86,7 @@ Example:
     "dependencies": {
         "theLocalComponent1" : "theComponent1",
         "theLocalComponent2" : "../theComponent2",
-        "theLocalComponent3" : "file:///Users/jean/theComponent3"
+        "theLocalComponent3" : "file:///Users/jean/theComponent3",
         "theGitHubComponent1": {
             "github" : "JohnSmith/theGitHubComponent1"
         }
@@ -124,8 +124,6 @@ For a local component, if the selected item is correct and located next to the p
 ![](fig-03)
 
 For a GitHub component, you must **add the GitHub repository** address and define a **dependency rule** to control how the version is resolved. This is done via the component management dialog:
-
-To declare a GitHub component, the GitHub repository address must be provided, along with a dependency rule to control version resolution. This is configured through the component management dialog:
 
 ![](fig-04)
 
