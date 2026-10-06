@@ -37,8 +37,42 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 
 | English | 日本語 | Notes |
 |---|---|---|
+| dependency / project dependencies | 依存関係 / プロジェクト依存関係 | First occurrence: 依存関係（dependencies） |
+| Dependencies panel | 依存関係パネル | Official doc term |
+| Dependency Manager | 依存関係マネージャー | First occurrence: 依存関係マネージャー（Dependency Manager） |
+| Design → Project Dependencies menu | **デザイン**／**プロジェクト依存関係**メニュー | Official doc: デザイン/プロジェクト依存関係 |
+| origin tag | オリジンタグ | First occurrence: オリジンタグ（origin tag） |
+| origin: 4D Component / dependencies.json / Environment / Project Component | 4Dビルトイン / プロジェクトで宣言 / environmentで宣言 / Componentsフォルダー | Japanese UI labels (official doc) |
+| dependency rule | 依存関係ルール | |
+| Latest | 自動更新する(latest) | Japanese UI label |
+| Up to Next Major Version | メジャー更新の手前まで | Japanese UI label |
+| Up to Next Minor Version | マイナー更新の手前まで | Japanese UI label |
+| Exact Version (Tag) | 自動更新しない(タグ指定) | Japanese UI label |
+| Follow 4D Version | 4Dのバージョンに追随する | Japanese UI label |
+| Check for updates | 更新をチェックする | Japanese UI label |
+| Update on next startup | 次回起動時に更新 | UI shows 次回起動時に<name>を更新 |
+| Automatic update | 自動アップデート | Japanese UI label |
+| Add a GitHub personal access token... | GitHubパーソナルアクセストークンを追加... | Japanese UI label |
+| Edit the GitHub personal access token... | GitHubパーソナルアクセストークンを編集... | Inferred from 追加...; confirm against the Japanese UI |
+| personal access token / access token | パーソナルアクセストークン / アクセストークン | |
+| Update available | Update available（更新あり） | Status labels stay in English in the Japanese UI (official doc) |
+| error messages (The download archive…, Unable to find…) | kept in English in 「」 + エラー | Japanese UI wording unconfirmed |
+| built-in component | ビルトインコンポーネント | |
+| interpreted / compiled (mode, component) | インタープリター / コンパイル済み；インタープリターモード / コンパイルモード | Official doc |
+| host project | ホストプロジェクト | |
+| release / tag / version | リリース / タグ / バージョン | |
+| Semantic Versioning | セマンティックバージョニング | |
+| LTS / R-Release | LTS版 / Rリリース | |
+| repository (public / private) | リポジトリ（パブリック / プライベート） | |
+| developer mode | 開発モード | |
+| notarization | 公証（notarization） | macOS |
+| gauge | ゲージ | |
+| developer | デベロッパー | 4D doc style |
 
 ## Proper nouns in examples
 
 | English | 日本語 | Notes |
 |---|---|---|
+| JohnSmith, theGitHubComponent1, theLocalComponent1–3, theFirstGitHubComponent | unchanged | Inside code |
+| jauge / Jauge, launchJauge | unchanged | Demo component and method |
+| technote-25-06 | unchanged | GitHub account |
