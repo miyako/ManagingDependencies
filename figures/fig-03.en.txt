@@ -1,0 +1,8 @@
+Edit the dependency...
+9
+GitHub
+Address of the GitHub repository
+technote-25-06/Jauge
+Dependency Rule Latest
+8
+Cancel

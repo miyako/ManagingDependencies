@@ -1,0 +1,2 @@
+componentTestPublic
+dependencies,ison

@@ -1,0 +1,24 @@
+All (12)
+Active (12)
+Inactive Conflicts
+4D SVG
+9
+4D Component
+4D ViewPro
+9
+4D Component
+4D Widgets
+9
+4D Component
+4D WritePro Interface
+9
+4D Component
+componentTestPublic
+dependencies.json
+1.0.5
+jauge
+9
+Environment
+testComponent
+dependencies.json
+20.9.20250521

@@ -18,6 +18,7 @@ import sys
 from pathlib import Path
 
 import pymupdf
+from PIL import Image
 
 import config
 
@@ -40,6 +41,26 @@ def write(path: Path, text: str, force: bool):
     print(f"wrote: {path.relative_to(ROOT)}")
 
 
+def visible_rect(bbox, clips):
+    """Word crops images with a clip path; keep only clips that contain the image
+    or lie (almost) entirely inside it, so unrelated clips (table cells) are ignored."""
+    vis = pymupdf.Rect(bbox)
+    for c in clips:
+        inter = pymupdf.Rect(c) & bbox
+        if inter.is_empty:
+            continue
+        if c.contains(bbox) or inter.get_area() >= 0.9 * c.get_area():
+            vis &= c
+    return vis if not vis.is_empty else pymupdf.Rect(bbox)
+
+
+def crop_fractions(bbox, vis):
+    if abs(vis.get_area() - bbox.get_area()) < 1:
+        return None
+    return [(vis.x0 - bbox.x0) / bbox.width, (vis.y0 - bbox.y0) / bbox.height,
+            (vis.x1 - bbox.x0) / bbox.width, (vis.y1 - bbox.y0) / bbox.height]
+
+
 def line_items(page):
     items = []
     for b in page.get_text("dict")["blocks"]:
@@ -52,10 +73,12 @@ def line_items(page):
                 continue
             items.append({"kind": "line", "x": round(x0), "y0": y0, "y1": y1, "x1": x1,
                           "spans": spans, "text": "".join(s["text"] for s in spans)})
+    clips = [pymupdf.Rect(d["scissor"]) for d in page.get_drawings(extended=True) if d["type"] == "clip"]
     for info in page.get_image_info(xrefs=True):
-        x0, y0, x1, y1 = info["bbox"]
-        items.append({"kind": "image", "y0": y0, "y1": y1, "xref": info["xref"],
-                      "width_pt": x1 - x0})
+        bbox = pymupdf.Rect(info["bbox"])
+        vis = visible_rect(bbox, clips)
+        items.append({"kind": "image", "y0": vis.y0, "y1": vis.y1, "xref": info["xref"],
+                      "width_pt": vis.width, "crop": crop_fractions(bbox, vis)})
     items.sort(key=lambda it: (it["y0"], it.get("x", 0)))
     return items
 
@@ -183,7 +206,8 @@ def extract_body(doc):
         for it in line_items(doc[pno]):
             if it["kind"] == "image":
                 flush_all()
-                figures.append({"page": pno + 1, "xref": it["xref"], "width_pt": it["width_pt"]})
+                figures.append({"page": pno + 1, "xref": it["xref"], "width_pt": it["width_pt"],
+                                "crop": it["crop"]})
                 out.append(f"![](fig-{len(figures):02d})\n")
                 prev = None
                 continue
@@ -232,8 +256,8 @@ def extract_body(doc):
             if fonts & MARKERS:
                 flush_para(); flush_code()
                 state["in_bullet"] = True
-                rest = "".join(s["text"] for s in it["spans"]
-                               if font_of(s) not in MARKERS | STRIP_FONTS)
+                rest = inline_md([s for s in it["spans"]
+                                  if font_of(s) not in MARKERS | STRIP_FONTS])
                 state["bullets"].append([rest] if rest.strip() else [])
                 prev = it
                 continue
@@ -300,6 +324,11 @@ def extract_figures(doc, figures, force):
             if smask[0] == "xref":
                 pix = pymupdf.Pixmap(pix, pymupdf.Pixmap(doc, int(smask[1].split()[0])))
             pix.save(png)
+            if fig.get("crop"):
+                with Image.open(png) as im:
+                    w, h = im.size
+                    l, t, r, b = fig["crop"]
+                    im.crop((round(l * w), round(t * h), round(r * w), round(b * h))).save(png)
             print(f"wrote: {png.relative_to(ROOT)}")
         layout_path = figdir / "layout" / f"{name}.json"
         if force or not layout_path.exists():

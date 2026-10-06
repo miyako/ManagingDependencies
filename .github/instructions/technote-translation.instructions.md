@@ -71,6 +71,8 @@ monospace font for code instead of colours, `code.colors` can stay empty.
 - Inline: bold spans → `**…**`; inline code-coloured or monospace spans → `` `…` ``.
 - Figures: raster images become `figures/fig-NN.png` (RGBA composited onto white) in document order, with
   `![caption](fig-NN)` placed where the image sits.
+  - Images cropped by a clip path (Word's picture crop) are cut to the visible area; `width_pt` and the
+    reading-order position use the clipped rectangle.
   - `layout/fig-NN.json` stores `source`, `page`, `width_pt` (the placed width, reused in the rebuild) and
     `localize`, plus one `items[]` entry per OCR line with its `box`.
 - Vector diagrams (drawn with PDF paths, not images) are **not** extracted. `inspect` lists pages with many
