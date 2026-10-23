@@ -64,7 +64,7 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 | Add a dependency... / Edit the dependency... / Remove the dependency | 依存関係を追加... / 依存関係を編集... / 依存関係の削除... | Official doc |
 | Local / Add / Apply / Cancel / Browse | ローカル / 追加 / 適用 / キャンセル / 参照 | Dialog buttons and tabs |
 | All / Active / Inactive / Conflicts (tabs) | 全て / アクティブ / 非アクティブ / コンフリクト | Official doc |
-| error messages (The download archive…, Unable to find…) | kept in English in 「」 + エラー | Japanese UI wording unconfirmed |
+| error messages (The download archive…, Unable to find…) | kept in English in 「」 + エラー | The help bubble messages are always English in the 4D UI (confirmed by editor) |
 | built-in component | ビルトインコンポーネント | |
 | interpreted / compiled (mode, component) | インタープリター / コンパイル済み；インタープリターモード / コンパイルモード | Official doc |
 | host project | ホストプロジェクト | |
