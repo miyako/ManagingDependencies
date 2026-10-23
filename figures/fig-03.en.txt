@@ -1,0 +1,7 @@
+Edit the dependency...
+Local
+Address of the GitHub repository
+Dependency Rule
+Latest
+Cancel
+Apply

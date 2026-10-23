@@ -1,0 +1,43 @@
+{
+ "source": "fig-16.png",
+ "page": 13,
+ "width_pt": 276.6,
+ "localize": true,
+ "items": [
+  {
+   "box": [
+    101,
+    44,
+    131,
+    13
+   ],
+   "align": "left",
+   "size": 12.5,
+   "erase_pad": 2
+  },
+  {
+   "box": [
+    101,
+    76,
+    200,
+    13
+   ],
+   "align": "left",
+   "size": 12.5,
+   "max_width": 300,
+   "erase_pad": 2
+  },
+  {
+   "box": [
+    101,
+    105,
+    253,
+    13
+   ],
+   "align": "left",
+   "size": 12.5,
+   "max_width": 310,
+   "erase_pad": 2
+  }
+ ]
+}

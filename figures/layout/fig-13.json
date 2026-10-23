@@ -1,0 +1,107 @@
+{
+ "source": "fig-13.png",
+ "page": 12,
+ "width_pt": 468.0,
+ "localize": false,
+ "items": [
+  {
+   "box": [
+    21,
+    23,
+    94,
+    28
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    183,
+    26,
+    148,
+    20
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    23,
+    97,
+    320,
+    25
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    723,
+    95,
+    169,
+    28
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    914,
+    98,
+    89,
+    20
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    30,
+    157,
+    98,
+    20
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    436,
+    159,
+    151,
+    18
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    891,
+    160,
+    118,
+    17
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    27,
+    234,
+    100,
+    17
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    414,
+    384,
+    208,
+    23
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    357,
+    429,
+    318,
+    14
+   ],
+   "align": "center"
+  }
+ ]
+}

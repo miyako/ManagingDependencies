@@ -1,0 +1,3 @@
+Remove the dependency
+Add a GitHub personal access token...
+Update all remote dependencies on next startup

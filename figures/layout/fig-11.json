@@ -1,0 +1,50 @@
+{
+ "source": "fig-11.png",
+ "page": 10,
+ "width_pt": 468.0,
+ "localize": true,
+ "items": [
+  {
+   "box": [
+    716,
+    12,
+    100,
+    17
+   ],
+   "align": "center",
+   "bg": [
+    255,
+    60,
+    83,
+    255
+   ],
+   "fg": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "weight": "bold",
+   "size": 14,
+   "erase_pad": 2,
+   "max_width": 98
+  },
+  {
+   "box": [
+    131,
+    67,
+    128,
+    14
+   ],
+   "align": "center",
+   "weight": "bold",
+   "bg": [
+    236,
+    242,
+    247,
+    255
+   ],
+   "size": 15
+  }
+ ]
+}

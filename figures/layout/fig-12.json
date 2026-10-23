@@ -1,0 +1,39 @@
+{
+ "source": "fig-12.png",
+ "page": 11,
+ "width_pt": 187.8,
+ "localize": true,
+ "items": [
+  {
+   "box": [
+    15,
+    14,
+    236,
+    13
+   ],
+   "align": "left",
+   "size": 12.5,
+   "max_width": 290
+  },
+  {
+   "box": [
+    15,
+    46,
+    105,
+    13
+   ],
+   "align": "left",
+   "size": 12.5
+  },
+  {
+   "box": [
+    15,
+    68,
+    109,
+    13
+   ],
+   "align": "left",
+   "size": 12.5
+  }
+ ]
+}
