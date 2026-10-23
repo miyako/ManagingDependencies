@@ -1,8 +1,6 @@
 Ajouter une dépendance...
 Local
-GitHub
-Sélectionner un package .4dbase ou un fichier
-4DProject
+Sélectionner un package .4dbase ou un fichier .4DProject
 Parcourir
 Annuler
 Ajouter

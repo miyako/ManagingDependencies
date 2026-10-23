@@ -1,7 +1,7 @@
 Dependency Rule
+Follow 4D version
 Latest
 Up to Next Major Version
 Up to Next Minor Version
 Exact Version (Tag)
-Follow 4D
-Version
+Follow 4D version

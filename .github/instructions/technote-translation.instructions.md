@@ -109,7 +109,9 @@ For each changed item:
 4. Similar sizes are snapped together, so labels of the same rank match.
 5. The text is drawn with the weight (`light`, `regular` or `bold`) and alignment (`center` or `left`).
 
-Overrides per item: `scale`, `size`, `weight`, `align`, `dx`, `dy`, `box`, `bg`, `fg`, `erase_pad`.
+Overrides per item: `scale`, `size`, `weight`, `align`, `dx`, `dy`, `box`, `bg`, `fg`, `erase_pad`,
+`max_width` (px available for the translation; use it with `dx` when labels are moved apart), and
+`erase: "rows"` (fill each row with the pixel just left of the box; for gradient title bars).
 Per figure:
 - `"localize": false` copies the image unchanged (use it for screenshots)
 - `"replace": "fig-NN-<tgt>.png"` uses a ready-made image from `figures/`, keeping `width_pt`

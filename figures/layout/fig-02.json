@@ -2,52 +2,42 @@
  "source": "fig-02.png",
  "page": 6,
  "width_pt": 258.6,
- "localize": false,
+ "localize": true,
  "items": [
   {
    "box": [
-    220,
-    37,
     219,
+    37,
+    220,
     17
    ],
-   "align": "center"
+   "align": "center",
+   "weight": "bold",
+   "size": 17
   },
   {
    "box": [
-    266,
-    70,
-    51,
-    28
+    284,
+    78,
+    36,
+    16
    ],
-   "align": "center"
-  },
-  {
-   "box": [
-    335,
-    77,
-    59,
-    12
-   ],
-   "align": "center"
+   "align": "left",
+   "size": 10.5,
+   "dx": -2,
+   "max_width": 40
   },
   {
    "box": [
     83,
-    98,
-    265,
-    29
+    107,
+    360,
+    13
    ],
-   "align": "center"
-  },
-  {
-   "box": [
-    380,
-    108,
-    63,
-    12
-   ],
-   "align": "center"
+   "align": "left",
+   "weight": "bold",
+   "size": 12.5,
+   "max_width": 470
   },
   {
    "box": [
@@ -56,7 +46,7 @@
     51,
     9
    ],
-   "align": "center"
+   "align": "left"
   },
   {
    "box": [
@@ -65,16 +55,18 @@
     45,
     10
    ],
-   "align": "center"
+   "align": "center",
+   "size": 12
   },
   {
    "box": [
     527,
     282,
-    40,
+    42,
     11
    ],
-   "align": "center"
+   "align": "center",
+   "size": 12
   }
  ]
 }

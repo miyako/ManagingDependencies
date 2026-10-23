@@ -18,7 +18,7 @@ description: Visually review and fix localised figures (diagram text overlays) u
 3. Fix by editing `figures/layout/fig-NN.json` → `items[N]` (N = 0-based line index), then `make figures` and
    `make review FIGS="NN"` again.
    - Overrides: `scale`, `size` (px), `weight` (`light`/`regular`/`bold`), `align` (`left`/`center`), `dx`, `dy`,
-     `box` `[x,y,w,h]` in image pixels, `bg`/`fg` `[r,g,b,a]`, `erase_pad`.
+     `box` `[x,y,w,h]` in image pixels, `bg`/`fg` `[r,g,b,a]`, `erase_pad`, `max_width`, `erase: "rows"`.
    - If OCR merged two labels into one line: split the line in `fig-NN.<src>.txt` and `fig-NN.<tgt>.txt`, and give
      each new item an explicit `box`. Measure the boxes on the original image, e.g. crop it with PIL and view it.
    - To merge two lines into one label: put the full text on the first line, leave the second empty, and enlarge

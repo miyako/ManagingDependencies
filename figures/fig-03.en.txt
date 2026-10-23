@@ -1,8 +1,7 @@
 Edit the dependency...
-9
-GitHub
+Local
 Address of the GitHub repository
-technote-25-06/Jauge
-Dependency Rule Latest
-8
+Dependency Rule
+Latest
 Cancel
+Apply

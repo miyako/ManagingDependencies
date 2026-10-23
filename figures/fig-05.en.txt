@@ -1,2 +1,2 @@
-✓ Automatic update
+Automatic update
 Check for updates

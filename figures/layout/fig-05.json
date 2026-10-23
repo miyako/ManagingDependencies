@@ -2,16 +2,17 @@
  "source": "fig-05.png",
  "page": 8,
  "width_pt": 253.8,
- "localize": false,
+ "localize": true,
  "items": [
   {
    "box": [
-    14,
+    44,
     11,
-    150,
+    120,
     14
    ],
-   "align": "center"
+   "align": "left",
+   "size": 14
   },
   {
    "box": [
@@ -20,7 +21,8 @@
     119,
     14
    ],
-   "align": "center"
+   "align": "left",
+   "size": 14
   }
  ]
 }

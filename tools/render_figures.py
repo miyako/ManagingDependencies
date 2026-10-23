@@ -156,7 +156,12 @@ def render(name, layout, en, ja):
     for item, src, dst, box, bg, fg, weight, left, right, size_en in jobs:
         x, y, w, h = box
         p = item.get("erase_pad", 3)
-        draw.rectangle([x - p, y - p, x + w + p, y + h + p], fill=bg)
+        if item.get("erase") == "rows":  # gradients: fill each row with the colour just left of the box
+            px = img.load()
+            for yy in range(max(0, y - p), min(img.size[1], y + h + p + 1)):
+                draw.line([(x - p, yy), (x + w + p, yy)], fill=px[max(0, x - p - 1), yy])
+        else:
+            draw.rectangle([x - p, y - p, x + w + p, y + h + p], fill=bg)
     W = img.size[0]
     for item, src, dst, box, bg, fg, weight, left, right, size_en in jobs:
         if not dst:
@@ -169,7 +174,7 @@ def render(name, layout, en, ja):
         else:
             cx = x + w / 2
             avail = 2 * min(cx - left, right - cx) - 2 * margin
-        avail = max(avail, w)
+        avail = item.get("max_width") or max(avail, w)
         f = font(weight, size)
         tw, _ = text_size(draw, dst, f)
         if tw > avail:

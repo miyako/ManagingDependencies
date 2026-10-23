@@ -53,9 +53,17 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 | Update on next startup | 次回起動時に更新 | UI shows 次回起動時に<name>を更新 |
 | Automatic update | 自動アップデート | Japanese UI label |
 | Add a GitHub personal access token... | GitHubパーソナルアクセストークンを追加... | Japanese UI label |
-| Edit the GitHub personal access token... | GitHubパーソナルアクセストークンを編集... | Inferred from 追加...; confirm against the Japanese UI |
+| Edit the GitHub personal access token... | GitHubパーソナルアクセストークンを編集... | Confirmed by editor |
 | personal access token / access token | パーソナルアクセストークン / アクセストークン | |
-| Update available | Update available（更新あり） | Status labels stay in English in the Japanese UI (official doc) |
+| Update available | 更新利用可能 | Status label in the Japanese UI (confirmed by editor) |
+| Not found | 見つかりません | Status label (confirmed by editor) |
+| Update all remote dependencies on next startup | 次回起動時に全てのリモート依存関係を更新する | Options menu (confirmed by editor) |
+| Select a .4dbase package or a .4DProject file | .4dbase パッケージか.4DProject ファイルを選択してください | Add dependency dialog (confirmed by editor) |
+| Dependency Rule | 依存関係のルール | Dialog label (confirmed by editor) |
+| Address of the GitHub repository | GitHubリポジトリのアドレス | Dialog label (confirmed by editor) |
+| Add a dependency... / Edit the dependency... / Remove the dependency | 依存関係を追加... / 依存関係を編集... / 依存関係の削除... | Official doc |
+| Local / Add / Apply / Cancel / Browse | ローカル / 追加 / 適用 / キャンセル / 参照 | Dialog buttons and tabs |
+| All / Active / Inactive / Conflicts (tabs) | 全て / アクティブ / 非アクティブ / コンフリクト | Official doc |
 | error messages (The download archive…, Unable to find…) | kept in English in 「」 + エラー | Japanese UI wording unconfirmed |
 | built-in component | ビルトインコンポーネント | |
 | interpreted / compiled (mode, component) | インタープリター / コンパイル済み；インタープリターモード / コンパイルモード | Official doc |

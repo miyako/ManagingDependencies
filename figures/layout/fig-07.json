@@ -2,16 +2,31 @@
  "source": "fig-07.png",
  "page": 9,
  "width_pt": 226.2,
- "localize": false,
+ "localize": true,
  "items": [
   {
    "box": [
     10,
     10,
-    114,
+    115,
     14
    ],
-   "align": "center"
+   "align": "left",
+   "size": 12.5,
+   "erase_pad": 2,
+   "max_width": 200
+  },
+  {
+   "box": [
+    141,
+    11,
+    117,
+    14
+   ],
+   "align": "left",
+   "size": 12.5,
+   "erase_pad": 2,
+   "max_width": 200
   },
   {
    "box": [
@@ -20,25 +35,35 @@
     38,
     11
    ],
-   "align": "center"
+   "align": "left",
+   "size": 12.5,
+   "erase_pad": 2,
+   "max_width": 200,
+   "dy": 1.5
   },
   {
    "box": [
     141,
     57,
-    165,
+    166,
     14
    ],
-   "align": "center"
+   "align": "left",
+   "size": 12.5,
+   "erase_pad": 2,
+   "max_width": 200
   },
   {
    "box": [
     141,
-    67,
-    165,
-    31
+    77,
+    166,
+    14
    ],
-   "align": "center"
+   "align": "left",
+   "size": 12.5,
+   "erase_pad": 2,
+   "max_width": 200
   },
   {
    "box": [
@@ -47,25 +72,22 @@
     122,
     14
    ],
-   "align": "center"
+   "align": "left",
+   "size": 12.5,
+   "erase_pad": 2,
+   "max_width": 200
   },
   {
    "box": [
-    148,
+    141,
     117,
-    58,
-    11
+    117,
+    13
    ],
-   "align": "center"
-  },
-  {
-   "box": [
-    242,
-    120,
-    15,
-    8
-   ],
-   "align": "center"
+   "align": "left",
+   "size": 12.5,
+   "erase_pad": 2,
+   "max_width": 200
   }
  ]
 }
